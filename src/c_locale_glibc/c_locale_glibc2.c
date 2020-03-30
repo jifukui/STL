@@ -218,32 +218,32 @@ const char *_Locale_messages_default( char *nm )
 
 char const*_Locale_ctype_name( const void *__loc, char *buf )
 {
-  return __loc != 0 ? strncpy( buf, ((__c_locale)__loc)->__locales[LC_CTYPE]->name, _Locale_MAX_SIMPLE_NAME ) : 0;
+  return 0;
 }
 
 char const*_Locale_numeric_name( const void *__loc, char *buf )
 {
-  return __loc != 0 ? strncpy( buf, ((__c_locale)__loc)->__locales[LC_NUMERIC]->name, _Locale_MAX_SIMPLE_NAME ) : 0;
+  return 0;
 }
 
 char const*_Locale_time_name( const void *__loc, char *buf )
 {
-  return __loc != 0 ? strncpy( buf, ((__c_locale)__loc)->__locales[LC_TIME]->name, _Locale_MAX_SIMPLE_NAME ) : 0;
+  return 0;
 }
 
 char const*_Locale_collate_name( const void *__loc, char *buf )
 {
-  return __loc != 0 ? strncpy( buf, ((__c_locale)__loc)->__locales[LC_COLLATE]->name, _Locale_MAX_SIMPLE_NAME ) : 0;
+  return 0;
 }
 
 char const*_Locale_monetary_name( const void *__loc, char *buf )
 {
-  return __loc != 0 ? strncpy( buf, ((__c_locale)__loc)->__locales[LC_MONETARY]->name, _Locale_MAX_SIMPLE_NAME ) : 0;
+  return 0;
 }
 
 char const*_Locale_messages_name( const void *__loc, char *buf )
 {
-  return __loc != 0 ? strncpy( buf, ((__c_locale)__loc)->__locales[LC_MESSAGES]->name, _Locale_MAX_SIMPLE_NAME ) : 0;
+  return 0;
 }
 
 void _Locale_ctype_destroy( void *__loc )
